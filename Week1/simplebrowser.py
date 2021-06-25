@@ -1,14 +1,15 @@
+
 import socket
 
-mysocket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-mysocket.connect(('data.py4e.org',80))
-cmd = 'GET http://data.py4e.org/page1.html HTTP/1.0\r\n\r\n'.encode()
-mysocket.send(cmd)
+mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+mysock.connect(('localhost', 9000)) # <-- Traceback at this line because the address is not right/dead
+cmd = 'GET http://data.pr4e.org/romeo.txt HTTP/1.0\r\n\r\n'.encode()
+mysock.send(cmd)
 
 while True:
-  data = mysocket.recv(512)
-  if len(data)<1:
-    break
-  print(data.decode(), end='')
+    data = mysock.recv(512)
+    if len(data) < 1:
+        break
+    print(data.decode(),end='')
 
-mysocket.close()
+mysock.close()
