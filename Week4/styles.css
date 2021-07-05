@@ -1,0 +1,9 @@
+body{
+  font-family: monospace, Arial, Helvetica, sans-serif;
+}
+p {
+  border: solid red 1px;
+}
+div{
+  border: solid blue 1px;
+}
