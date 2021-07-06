@@ -1,3 +1,21 @@
 nav {
-    
+    margin: 2em auto 1em auto;
+    max-width: 100%;
+    border: solid green .2em;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: gray;
+}
+nav a:visited {
+    text-decoration: none;
+    color: gray;
+}
+nav a:hover{
+    color: darkgray;
 }
