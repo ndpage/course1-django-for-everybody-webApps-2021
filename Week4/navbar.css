@@ -1,5 +1,6 @@
 nav {
     width: max-content;
+    padding-right: .5em;
     border-right: solid green .3em;
     position: fixed;
     top: 1em;
