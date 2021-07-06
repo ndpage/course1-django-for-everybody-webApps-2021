@@ -1,9 +1,17 @@
 body{
   font-family: monospace, Arial, Helvetica, sans-serif;
+  max-width: 50em;
+  margin: 5em auto 10em auto;
+  padding-left: 5em;
+  padding-right: 5em;
 }
 p {
-  border: solid red 1px;
+  overflow: auto;
+  border: solid red .5em;
+  max-width: max-content;
 }
+
 div{
-  border: solid blue 1px;
+  border: solid blue .25em;
+  max-width: max-content;
 }
